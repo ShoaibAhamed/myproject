@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+  <title>IIT NY</title>
+
+  <!-- NAV BAR STARTS -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <!-- NAV BAR ENDS -->
+
+  <!-- SLIDE SHOW STARTS -->
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+
+  <script>
+    $("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(2000)
+    .end()
+    .appendTo('#slideshow');
+},  6000);
+
+
+  </script>
+
+<!--   SLIDE SHOW ENDS -->
+
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+
+
+<!-- chart JS starts here --> 
+
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task',           'Hours per Day'],
+          ['Total Developer Needed',   1000000],
+          ['Total Candidate ',  300000],
+          // ['Commute',  2],
+          // ['Watch TV', 2],
+          // ['Sleep',    7]
+        ]);
+
+        var options = {
+          title: 'WEB DEVELOPERS NEEDED by 2025',
+           'width':575,
+          'height':700,
+          chartArea:{left:50,top:120,width:'90%',height:'90%'},
+          backgroundColor:'#F8F8FF',
+          colors:['orange','#008080'],
+          fontSize:20,
+
+
+
+
+           
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+
+<!-- chart JS ends here --> 
+
+    <style>
+
+  
+
+.navbar-default {
+    background-color:#008080;
+    border-bottom: 10px solid orange;
+}
+
+@media only screen and (max-width: 700px) {
+    .navbar-default {
+      width:100%;
+      font-size: 25px;
+      /*height:100px;*/
+
+    
+    }
+
+    
+}
+
+    
+.navbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    top: 0;
+}
+
+
+
+
+
+
+#nati a{color:white;
+    text-decoration: underline overline;
+    font-size: 35px;
+    font-family:Impact, fantasy;
+    width:90%;
+    margin-top: 10px;
+    line-height: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+
+
+   }
+
+
+   @media only screen and (max-width: 700px) {
+    #nati a { 
+    margin: 0 5% 8% 5%; 
+    font-size: 30px;
+    padding: 0;
+    }
+
+}
+
+
+
+
+
+#myNavbar a:link,  a:visited{
+
+  display:block;
+  width:90px;
+  height:35px;
+  top:0px;
+  left:0px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 15px;
+  margin-top: 20px; 
+
+}
+   
+
+#myNavbar{margin-left: 60%;
+            margin-top: 0;
+            margin-bottom: 20px;
+
+   } 
+
+
+   
+
+
+    #myNavbar ul li a{color:white;
+}
+
+
+
+    #myNavbar a:hover, a:active {
+  font-size: 17px;
+
+} 
+
+    .navbar-toggle{background-color:orange;
+      margin-bottom: 10%;
+      position: absolute;
+      margin-left: 90%;
+    }
+
+
+    /*NAV BAR ENDS*/
+
+
+    /*slide show STARTS*/
+
+
+#slideshow > div { 
+    position: absolute; 
+    top: 15%; 
+    left: 0px; 
+    right: 0px; 
+    bottom: 0px; 
+}
+
+@media only screen and (max-width: 700px) {
+    #slideshow > div { 
+    top: 15%; 
+    }
+}
+
+
+
+   /* slide show ends */
+  
+
+   #ciko{position:absolute;
+          background-image:url("img/weather.png");
+
+    top:105%;
+  }
+
+    @media only screen and (max-width: 700px) {
+    #ciko { 
+    top: 70%; 
+    }
+}
+
+    /*rest css strats */
+
+    div.monday {
+    margin: 0;
+    /*border: 1px solid #ccc;*/
+    float: left;
+    width: 100%;
+    
+    /*height:150%;*/
+    /*padding-top:50px;*/
+
+} 
+
+div.monday:hover {
+    /*border: 1px solid red;*/
+}
+
+div.monday img {
+    width: 100%;
+    height: auto;
+}
+
+div.monday_morning{width:100%;      /*for the quote under slideshow*/
+                    height:400px;
+                    background-color:#00cdcd;
+                    color:white;
+                    margin:0;
+                    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    transform: rotate(7deg);
+                  opacity:0.8;
+              
+
+                  }
+
+ @media only screen and (max-width: 700px) {
+    div.monday_morning {
+    width: 100%;
+    height:300px; 
+    }
+
+
+}              
+
+div.monday_morning h1{position: absolute;
+                      margin-top: 5%;
+                      margin-right: 10%;
+                      margin-left: 10%;
+                      margin-bottom: 10%;
+                      min-height: 150%;
+                      font-size: 30px;
+                      font-family: "Comic Sans MS", cursive, sans-serif;
+                      }
+
+
+
+
+
+
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+div.first{width:30%;
+  -ms-transform: rotate(1deg); /* IE 9 */
+    -webkit-transform: rotate(1deg); /* Chrome, Safari, Opera */
+    transform: rotate(1deg);
+    background-color:orange;
+    color:black;
+    margin-top: 10%;
+    margin-left: 3%;
+    float:left;
+    margin-bottom:10%;
+    box-shadow: 10px 10px;
+
+
+
+}
+
+@media only screen and (max-width: 700px) {
+    div.first {
+    width: 100%;
+    height:300px; 
+    margin-left: 0;
+    }
+
+    
+}   
+
+div.second{background-image: url("http://www.designbolts.com/wp-content/uploads/2013/02/Free-Seamless-Wood-Textures-Patterns-For-3D-Mapping-2.jpg");
+margin-top: 20%;
+
+} 
+
+
+div#hedo{margin:5% 15% 0 15%;
+          color:black;
+          border:5px solid black;
+          padding:3%;
+          text-shadow: 1px 1px;
+
+
+}
+
+div#hedo:hover{background-color: orange;
+                transition:1s;
+              
+              }
+
+div.third{
+  width: 100%;
+  
+  
+
+}
+
+#why{background-color:#F8F8FF; /*#00cdcd;*/  /*#008080*/
+/*opacity: 0.4;*/
+width: 55%;
+height:700px;
+float:left;
+color:white;
+
+
+}
+
+#why_text{margin-top:7%;
+margin-right: 2%;
+font-family:Lucida Sans Typewriter;
+
+}
+
+#why h1{color:#008080;
+margin-left: 5%;
+font-weight: bold;
+
+}
+
+
+
+  
+
+#why_text h3{ margin-left: 5%;
+  color:#008080;}
+
+#why ul{color:black;
+margin-left: 5%;
+font-size: 20px;
+margin-top: 10%;
+line-height: 100%;
+margin-right: 10%;
+color: #6C3082;
+}
+
+@media only screen and (max-width: 700px) {
+    div#why ul {
+      width:100%;
+    
+    }
+
+    
+}
+
+
+@media only screen and (max-width: 700px) {
+    div#why {
+      width:100%;
+    
+    }
+
+    
+}
+
+#piechart{width:45%;
+
+height:700px;
+float:left;
+}
+
+@media only screen and (max-width: 700px) {
+    div#piechart {
+      display: none;
+    
+    }
+
+    
+}
+
+
+
+
+
+
+#foreground-text{
+  
+  width:100%;
+  height: 100px;
+   font: bold 20px;}
+
+ 
+ 
+ 
+ 
+   #foreground-text h1{background-color: #008080;
+                        color:white;
+                        width:80%;
+                        height:80px;
+                        padding-top: 2%;
+                        padding-bottom: 2%;
+                        text-align: center;
+                        margin-left: 10%;
+
+   }
+
+   @media only screen and (max-width: 700px) {
+    #foreground-text h1 {
+      width:80%;
+      font-size: 25px;
+
+    
+    }
+
+    
+}
+
+
+
+   .great{margin:2%;
+    width:45%;
+    float:left;
+    text-align: left;
+
+  
+  }
+
+  @media only screen and (max-width: 700px) {
+    div.great {
+    width: 100%;
+    }
+
+    
+}   
+
+.great h3{width:87%;
+  text-align: justify;
+  background-color: #00cdcd;
+  box-shadow: 10px 10px 5px #888888;
+  padding: 2%;
+  font-family:"Lucida Console", Monaco, monospace;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+    div.great h3 {
+    width: 100%;
+ 
+    }
+
+    
+}   
+
+.great h3 img{width:100px;
+              height:100px;
+              padding:2%;
+              border: 1px solid #00cdcd;
+              border-radius: 150px;
+
+              }
+
+.great span{color:white;}
+
+.great iframe{height:500px;
+  width:100%;
+  border: 7px solid #008080;
+    margin-top: 15%;
+    border-radius: 25px;
+}
+
+
+  div #blue_back{background-image: url("img/blue_back2.jpg");
+      width: 100%;
+      height:600px;
+      border-top: 10px solid orange;
+      
+  
+
+} 
+
+  div #blue_back_text{position: relative;
+                      top:10%;
+                      
+                      margin-left: 20%;
+                      margin-right: 10%;
+
+
+  }
+
+   @media only screen and (max-width: 700px) {
+    #blue_back_text {
+      position: relative;
+      top:0%;
+      margin-left: 0;
+      margin-right: 0;
+    
+    }
+
+    
+}
+
+
+
+  #blue_back_text h1{font-size: 120px;
+                     color:yellow;
+  }
+
+
+  @media only screen and (max-width: 700px) {
+    #blue_back_text h1 {
+      font-size: 60px;
+    
+    }
+
+    
+}
+
+
+  
+
+
+
+  #blue_back_text h3{color:white;
+                      margin-top:11%;
+                      margin-left: 10%;
+                      margin-right: 5%;
+                      line-height: 1.5;
+                      font-family: "Courier New", Courier, monospace;
+                      text-align: left;
+
+  }
+
+
+   @media only screen and (max-width: 700px) {
+    #blue_back_text h3 {
+      width:100%;
+      line-height:1.0;
+      margin-top:11%;
+      margin-left:0;
+      margin-right:0;
+      font-size:17px;
+      
+
+    
+    }
+
+    
+}
+
+  #css{background-image: url("img/blue_back07.jpg");
+      width: 100%;
+      height:450px;
+      color:white;
+      margin:0 0 0 0;
+      border-bottom: 3px solid #008080;
+      }
+
+
+  #css h1{position: relative;
+        float: left;
+      margin:10% 0 0 3%;
+        font-size: 120px;
+        color:white;
+
+      }
+
+      @media only screen and (max-width: 700px) {
+    #css h1 {
+      font-size: 60px;
+      
+
+    
+    }
+
+    
+}
+
+  #css p{margin:0 5% 5% 30%;
+          line-height: 1.5;
+          font-family: "Courier New", Courier, monospace;
+          text-align: justify;
+          font-size: 20px;
+          top:20%;
+          position: relative;
+          color:black;
+          font-weight: bold;
+
+
+
+
+        }
+
+         @media only screen and (max-width: 700px) {
+    #css p {
+      font-size: 60px;
+      font-size: 16px;
+      line-height: 1.0;
+      margin: 3%;
+      float:left;
+      top:2%;
+
+      
+
+    
+    }
+
+    
+}
+
+
+    #js_text{background-image: url("img/blue_back08.jpg");
+      width: 100%;
+      height:450px;
+      color:white;
+      margin:0 0 0 0;
+      border-bottom: 10px solid orange;
+    }
+
+
+      #js_text h1{position: relative;
+        float: left;
+      margin:10% 0 0 3%;
+        font-size: 60px;
+        color:yellow;
+        font-weight: bold;
+
+      }
+
+      @media only screen and (max-width: 700px) {
+    #js_text h1 {
+      font-size: 60px;
+      
+
+    
+    }
+
+    
+}
+
+  #js_text p{margin:0 10% 5% 40%;
+          line-height: 1.5;
+          font-family: "Courier New", Courier, monospace;
+          text-align: justify;
+          font-size: 20px;
+          top:20%;
+          position: relative;
+          color:white;
+
+
+
+        }
+
+         @media only screen and (max-width: 700px) {
+    #js_text p {
+      font-size: 60px;
+      font-size: 16px;
+      line-height: 1.0;
+      margin: 3%;
+      float:left;
+      top:2%;
+      
+
+    
+    }
+
+    
+}
+
+
+
+
+
+
+                      
+
+  
+
+  
+
+
+
+
+
+
+
+    /*rest css ends*/
+
+   /* CSS FOR SCROLLING STARTS*/ 
+
+   .animation-element {
+  position: relative;
+  width: 100%;
+  margin: 0% 1.33 2.66% 1.33%;
+  float: left;
+}
+
+
+  .bounce-up .subject {
+  opacity: 0;
+  -moz-transition: all 700ms ease-out;
+  -webkit-transition: all 700ms ease-out;
+  -o-transition: all 700ms ease-out;
+  transition: all 700ms ease-out;
+  -moz-transform: translate3d(0px, 200px, 0px);
+  -webkit-transform: translate3d(0px, 200px, 0px);
+  -o-transform: translate(0px, 200px);
+  -ms-transform: translate(0px, 200px);
+  transform: translate3d(0px, 200, 0px);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.bounce-up.in-view .subject {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+  transition-delay: 1200ms;
+}
+
+
+
+    /*CSS FOR SCROLLING ENDS */
+
+
+    </style>
+
+</head>
+
+<body>
+
+  <!-- NAV BAR STARTS -->
+
+
+<div class="navbar navbar-fixed-top">  
+
+<nav class="navbar navbar-inverse navbar-default">
+
+  
+  <div class="container-fluid">
+    <div class="navbar-header">
+      
+
+      <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+
+ 
+
+      <div id="nati">
+      <a class="navbar-brand" href="#">Institite of Internet Technology New York</a>
+    </div>
+
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Testimony</a></li>
+        <li><a href="slide_toggle.html">FAQ</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+</div>
+
+<!-- NAV BAR ENDS -->
+
+
+<!-- SLIDE SHOW STARTS  -->
+
+<div id="slideshow">
+   <div>
+     <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/12936583_10207780881094438_3163995043687813817_n.jpg?oh=fdea34a20c718c28f88708a665bcae3a&oe=57E57F57" width="100%" height="auto">
+   </div>
+   <div>
+     <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/11230847_234925610194502_7380099162984303167_n.jpg?oh=c371d3c98920ef0700f004f3f5d63c2b&oe=57B0E8C4" width="100%" height="auto">
+   </div>
+  
+  <div>
+     <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/12932572_235118683508528_5071249360632145401_n.jpg?oh=4aa635d727696916c154afb99e12fa53&oe=57ACBA72" width="100%" height="auto">
+   </div>
+  
+   
+</div>
+
+
+<!-- SLIDE SHOW ENDS  -->
+
+<!-- REST STARTS HERE -->
+
+    <div id="ciko">
+
+      <div class="monday">
+
+        <div class="container cf">
+    <!-- Course 1 -->
+    <div class="animation-element bounce-up cf">
+      <div class="subject development">
+  
+    <div class="monday_morning">
+
+      <h1><span style="color:black; font-size:120px; font-family: 'Lucida Bright', Georgia, serif;"> "</span>I never thought I could learn coding, now that I can code almost everything I see in the web" <span style="color:black; position: absolute; right-bottom:10%;">- Erick Walsh</span></h1>
+
+    </div>
+    </div>
+    </div>
+  </div>
+  
+  
+</div>
+
+  <!-- SCROLLING JS STARTS -->   
+
+    <script type="text/javascript">
+
+var $animation_elements = $('.animation-element');
+var $window = $(window);
+
+function check_if_in_view() {
+  var window_height = $window.height();
+  var window_top_position = $window.scrollTop();
+  var window_bottom_position = (window_top_position + window_height);
+
+  $.each($animation_elements, function() {
+    var $element = $(this);
+    var element_height = $element.outerHeight();
+    var element_top_position = $element.offset().top;
+    var element_bottom_position = (element_top_position + element_height);
+
+    //check to see if this current container is within viewport
+    if ((element_bottom_position >= window_top_position) &&
+      (element_top_position <= window_bottom_position)) {
+      $element.addClass('in-view');
+    } else {
+      $element.removeClass('in-view');
+    }
+  });
+}
+
+$window.on('scroll resize', check_if_in_view);
+$window.trigger('scroll');
+
+
+</script>
+
+
+
+
+   <!-- SCROLLING JS ENDS -->
+
+
+
+<div class="monday second">
+
+
+    <div id="hedo">
+
+      <h1> What you gonna learn at our 8 weeks course : </h1>
+
+    </div>
+
+        <div class="container cf">
+    <!-- Course 1 -->
+    <div class="animation-element bounce-up cf">
+      <div class="subject development">
+
+ <div class="monday_morning first">
+
+      <h1><span style="color:black; font-size:120px; font-family: 'Lucida Bright', Georgia, serif;"> "</span>I never thought I could learn coding, now that I can code almost everything I see in the web" <span style="color:black; position: absolute; right-bottom:10%;">- Erick Walsh</span></h1>
+
+    </div>
+
+    <div class="monday_morning first">
+
+      <h1><span style="color:black; font-size:120px; font-family: 'Lucida Bright', Georgia, serif;"> "</span>I never thought I could learn coding, now that I can code almost everything I see in the web" <span style="color:black; position: absolute; right-bottom:10%;">- Erick Walsh</span></h1>
+
+    </div>
+
+    <div class="monday_morning first">
+
+      <h1><span style="color:black; font-size:120px; font-family: 'Lucida Bright', Georgia, serif;"> "</span>I never thought I could learn coding, now that I can code almost everything I see in the web" <span style="color:black; position: absolute; right-bottom:10%;">- Erick Walsh</span></h1>
+
+    </div>
+
+  </div>
+</div>
+</div>
+    
+  
+  
+</div>
+
+
+<!-- SCROLLING JS STARTS -->   
+
+    <script type="text/javascript">
+
+var $animation_elements = $('.animation-element');
+var $window = $(window);
+
+function check_if_in_view() {
+  var window_height = $window.height();
+  var window_top_position = $window.scrollTop();
+  var window_bottom_position = (window_top_position + window_height);
+
+  $.each($animation_elements, function() {
+    var $element = $(this);
+    var element_height = $element.outerHeight();
+    var element_top_position = $element.offset().top;
+    var element_bottom_position = (element_top_position + element_height);
+
+    //check to see if this current container is within viewport
+    if ((element_bottom_position >= window_top_position) &&
+      (element_top_position <= window_bottom_position)) {
+      $element.addClass('in-view');
+    } else {
+      $element.removeClass('in-view');
+    }
+  });
+}
+
+$window.on('scroll resize', check_if_in_view);
+$window.trigger('scroll');
+
+
+</script>
+
+
+
+
+   <!-- SCROLLING JS ENDS -->
+
+<div class="monday third">
+
+  
+
+  <div id="why"> 
+
+    <div id="why_text">
+
+    <h1> Why Should You learn Coding<span style="font-size:110px; color:black; font-family:Blenny;">?</span></h1>
+
+    <h3>Let's check out the facts about web developers job-</h3>
+    
+    <ul>
+
+        <li> 121,000 people working as web developers right now in the U.S. alone.</li><br>
+
+        <li> 20% growth predicted for the industry through 2020* <br>
+<span style="font-style: italic;">*Bureau of Labor Statistics.</span></li><br>
+
+        <li>25,785 web developer job vacancies on Indeed.</li><br>
+        <li>Average salary for a web developer of $87,000.</li><br>
+        <li style="color:#008080;">By2025, US needs total 10,00,000 manpower in web field while the number of students who are learning web development while cover 23.1%. Meaning, 7,00,000 web developers positions will remain empty.</li>
+        
+
+
+    </ul>
+
+
+    </div>
+
+  </div>
+
+
+  
+
+    <div id="piechart"></div>
+  
+   
+</div> 
+
+<div class="monday">
+
+<span id="foreground-text"><h1> What the legends say about learning coding :)</h1></span>
+
+
+    
+    <div class="great">
+      <h3><img src="img/bill.jpg" align="left">"Learning to write programs stretches your mind, and helps you think better,  creates a way of thinking about things that I think is helpful in all domains."-<span>Bill Gates, Founded Microsoft</span></h3><br>
+
+      <h3><img src="img/zuka.jpg" align="left">"Our policy at Facebook is literally to hire as many talented engineers as we can find. There just aren't enough people who are trained and have these skills today. "-<span> Mark Zuckerberg, Founded facebook</span></h3><br>
+
+      <h3><img src="img/huf.jpg" align="left">"Learning to code is useful no matter what your career ambitions are." -<span>Aariana Huffington, Founded Huffington Post</span></h3>
+
+    </div>
+
+    
+
+
+    <div class="great">
+
+      <iframe src="https://www.youtube.com/embed/STRPsW6IY8k" frameborder="0"  allowfullscreen></iframe>
+
+      </div>
+
+   
+
+
+    
+
+
+
+
+
+    
+  
+
+</div>
+
+<div class="monday">
+  
+    <div id="blue_back">
+
+      <div id="blue_back_text">
+
+     
+
+      <h1> HTML 5</h1>
+
+      <!-- <img src="img/grad_cap_final.jpg" style= "width:300px; height:200px;">
+ -->
+
+
+      <h3>html is the master language to learn how to structure a website.It's like the pillars of building, the the fabrics of the clothings. Here, you will learn not only how to code in html but also how to write html codes in the industry standard manner that is world wide recognised and maintained.</h3>
+
+    </div>
+
+
+
+
+
+    </div>
+
+
+    <div id ="css">
+
+
+      <h1>CSS</h1>
+
+      <p> css is a style language that defines layout of HTML documents. For example, CSS covers fonts, colours, margins, lines, height, width, background images, advanced positions and many other things. Just wait and see!
+
+HTML can be (mis-)used to add layout to websites. But CSS offers more options and is more accurate and sophisticated. CSS is supported by all browsers today.
+
+After only a few lessons of this tutorial you will be able to make your own style sheets using CSS to give your website a new great look.</p>
+
+
+
+
+
+
+    </div>
+
+    <div id ="js_text">
+
+
+      <h1>JAVASCRIPT <br> J Query</h1>
+
+      <p> javaScript is a scripting language that adds interactivity to websites. JS is the third most in demand programming language and incredibly pervasive in web development. On the other hand, J Query is a javascript library to make create things easier. In Code Pre-School, you will learn the fundamental of JS / J Query and how to use them wisely in order to make your website fun and interractive.</p>
+
+
+
+
+
+
+    </div>
+    
+
+</div>
+
+
+
+
+<div class="monday">
+  
+    <img src="img/shoaib04.jpg"  width="300" height="200">
+  
+  <div class="desc">shoaib04</div>
+</div>
+
+
+
+
+
+    </div>   <!-- for ciko -->
+
+    <!-- REST ENDS HERE -->
+
+
+</body>
+</html>
